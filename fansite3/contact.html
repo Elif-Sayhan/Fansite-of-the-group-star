@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+    nav ul li a:hover {
+      color: rgb(54, 70, 39); 
+      border-bottom: 2px solid rgb(54, 70, 39);
+    }
+
+    h1 {
+      font-family: "roboto";
+      font-weight: 700;
+      
+    }
+    
+    .contact-item {
+      width: 600px;
+      margin: 0 auto;
+    }
+   .contact-item input {
+    display: block;
+    height: 40px;
+   }
+   label {
+    font-family: "roboto";
+    display: block;
+    margin-bottom: 5px;
+   }
+   textarea {
+    display: block;
+    margin-bottom: 25px;
+    height: 150px;
+    resize: none;
+    width: 100%;
+   }
+   .item1 {
+    margin: 25px 0;
+   }
+   .search-bar {
+    border: 2px solid rgb(209,209,209);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+   }
+   .btn-subscribe {
+    width: 150px;
+    height: 50px;
+    font-family: "roboto";
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0,0,0);
+    transition: transforme 0.15s;
+    margin-left: 2px;
+   }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li>Mark Hyman</li>
+      <li>Pavel Durov</li>
+      <li><a href="./fansite3/fansite3.html">Bob Marley</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-item">
+    <h1>Contact Us</h1>
+    <div class="item1">
+      <label for="Name">Name</label>
+      <input class="search-bar" type="text">
+    </div>
+    <div class="item1">
+      <label for="email">Email</label>
+    <input class="search-bar" type="text" name="email">
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea class="search-bar" name="" id=""></textarea>
+    </div>
+    <button class="btn-subscribe">Submit</button>
+  </div>
+
+  <footer>
+    <p>© 2024 Fansite</p>
+  </footer>
+  
+</body>
+</html>
