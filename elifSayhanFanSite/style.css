@@ -1,0 +1,502 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* Navbar fixed at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; /* Set the navbar height */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 15px 20px;
+    z-index: 1000;
+  }
+  /* Main content */
+.content {
+    padding-top: 60px; /* Offset content to be below the navbar */
+  }
+
+.logo img{
+    float:left;
+    width: 50px;
+    height: auto;
+    padding-right: 5%;
+
+}
+
+.logo h1{
+    font-size: 20px;
+    padding-right: 10%;
+}
+.header{
+    padding-top: 80px; /* Adjust to avoid overlap with fixed navbar */
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/mix\ vegetables.jpg);
+    background-position:bottom;
+    background-size:cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150;
+}
+.nav-links{
+    display: flex;
+    color: #060202; /* Dark color to contrast the background */
+    text-decoration: none;
+    gap: 20px; /* Space between links */
+    flex: 1;
+    text-align: left;
+}
+.nav-links a {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6); /* Light background for better readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Shadow for readability */
+    transition: background-color 0.3s ease;
+  }
+.nav-links ul li{
+    color: #000; /* Black or dark color for better contrast */
+    font-weight: bold; /* Optional: makes text bolder */
+    list-style: none;
+    display: inline-block;
+    padding: 2px 10px;
+    margin-left: 50px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000; /* Black or dark color for better contrast */
+    font-weight: bold; /* Optional: makes text bolder */
+    text-decoration: none;
+    font-size: medium;
+}
+.nav-links ul li::after{
+    content:'' ;
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-frame {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px 40px;
+    border-radius: 8px;
+    max-width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the box */
+  }
+  
+  .text-frame h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white; /* Ensures heading is white and visible */
+  }
+  
+  .text-frame p {
+    color: #e0e0e0; /* Light gray for readability */
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+.text-box h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text-box p {
+    color: #cccccc; /* Light gray color for paragraph text */
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+
+/*-------Function Health-----*/
+
+.Function-Health {
+    max-width: 1405px;
+    margin: 0 auto; /* Center the container */
+    padding: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Vertically align content */
+    justify-content: space-between; /* Space out content */
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 40px; /* Increased spacing between text and image */
+}
+
+.text-content h1 {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color:#060202;
+}
+
+.text-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color:#060202;
+}
+
+.image-content {
+    width: 30%; 
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+}
+
+.image-content img {
+    max-width: 100%; /* Adjust to container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;
+    padding-top: 30%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Function-Health {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .text-content {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+
+    .image-content img {
+        max-width: 70%;
+    }
+}
+
+/*-------Books-----*/
+
+/* Section container styling */
+.books_section {
+    padding: 40px 20px; /* Top/bottom and left/right padding */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center the section content */
+}
+
+/* Title styling */
+.title-books-section {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10px; /* Arttırıldı */
+}
+/* Container for books */
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Individual book card styling */
+.book-card {
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth animation */
+}
+
+/* Hover effect for book cards */
+.book-card:hover {
+    transform: translateY(-10px); /* Slightly raise the card */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Book image styling */
+.book-image {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    border-radius: 4px; /* Slight rounding */
+}
+
+/* Book title styling */
+/* General Container Styling */
+.Healthy-Recipes {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+.recipes-wrapper.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Title Styling */
+.title-recipes {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 2%;
+}
+
+/* Recipe Content Styling */
+.recipe-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* Recipe Image Styling */
+.recipe-image-container {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.recipe-image {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe Details Styling */
+.recipe-details-container {
+    flex: 1 1 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ingredients Section Styling */
+.ingredients-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.ingredient-group {
+    margin-bottom: 20px;
+}
+
+.ingredient-group h4 {
+    font-size: 20px;
+    color: #333; /* Darker gray for headings */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline; /* Optional styling */
+}
+
+.ingredients-list {
+    list-style-type: circle; /* Circular bullets for ingredients */
+    padding-left: 25px; /* Add spacing between text and bullet */
+    color: #555; /* Medium gray for text */
+}
+
+.ingredients-list li {
+    margin-bottom: 8px; /* Spacing between list items */
+    font-size: 16px; /* Comfortable text size */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Recipe Author Styling */
+.recipe-author {
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: italic; /* Author's note in italics */
+    color: #777; /* Light gray for subtle text */
+    text-align: right; /* Align text to the right */
+}
+
+.recipe-author p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/*
+
+/* Supplements */
+
+.Natural-Supplements {
+    padding: 2rem;
+  }
+  
+  .suplements-title {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 32px;
+  }
+  
+  .supplements-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container *//
+}
+  
+  
+  .supplements-card {
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth animation */
+}
+  
+  .supplements-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sup-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .supplements-cards .supplements-title {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .supplements-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .suplements-title {
+      font-size: 2rem;
+    }
+  }
+
+/*-------About Mark Hyman-----*/
+/* Section Styling */
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ayarı */
+    line-height: 1.6; /* Satır yüksekliği */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Sayfa arka plan rengi */
+  }
+  
+  section.Hyman-About {
+    background-color: #fff; /* Arka plan rengi beyaz */
+    padding: 80px 60px; /* İçerik alanı çevresinde boşluk */
+    margin: 200px 0; /* Sekme alanları arasında boşluk */
+  }
+  
+  .About-content {
+    display: flex;
+    justify-content: space-between; /* İçeriği sola ve sağa hizalar */
+    align-items: center; /* Yatayda ortalar */
+    max-width: 1200px;
+    margin: 0 auto; /* Sayfa ortalanmış */
+  }
+  
+  .imagemark-content {
+    flex: 0 0 40%; /* Resmin genişliği */
+    padding-right: 20px; /* Sağdan boşluk */
+  }
+  
+  .imagemark-content img {
+    width: 100%; /* Resmin genişliği %100 olacak şekilde ayarlanır */
+    border-radius: 50%; /* Resmi yuvarlak yapmak için */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  }
+  
+  .detail-about {
+    flex: 0 0 60%; /* Metin alanının genişliği */
+  }
+  
+  .detail-about p {
+    font-size: 1.1rem; /* Yazı büyüklüğü */
+    color: #333; /* Yazı rengi */
+    margin-bottom: 5px; /* Paragraflar arasında boşluk */
+    line-height: 1.7; /* Satır aralığı */
+  }
+  
+  .detail-about em {
+    font-style: italic; /* Podcast ismini italik yapar */
+    color: #2c3e50; /* Metnin rengini koyu mavi yapar */
+  }
+  
+  @media (max-width: 768px) {
+    .About-content {
+      flex-direction: column; /* Ekran küçüldüğünde dikey hizalama */
+      align-items: center; /* Ortalar */
+    }
+  
+    .imagemark-content,
+    .detail-about {
+      flex: 0 0 100%; /* Resim ve metin alanlarını %100 genişliğe ayarlama */
+      text-align: center; /* Metni ortalar */
+    }
+  
+    .imagemark-content img {
+      width: 80%; /* Küçük ekranlarda resim genişliğini azalt */
+    }
+  }
+  
+  
