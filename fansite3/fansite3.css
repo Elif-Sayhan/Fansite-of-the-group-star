@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -57,11 +56,12 @@ nav ul li a:hover {
 
 
 /* Dropdown Menu */
-.dropdown-menu {
+.dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
+  min-width: 100px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   list-style: none;
@@ -69,12 +69,18 @@ nav ul li a:hover {
   margin: 0;
   box-sizing: border-box;
 }
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown-menu li a {
+.dropdown-content li a {
   display: block;
   padding: 10px;
   color: #333;
@@ -99,6 +105,7 @@ nav ul li a:hover {
   font-family: "roboto";
   font-size: 1.6rem;
   line-height: 35px;
+  font-style: oblique;
 }
 
 /* Events Section */
@@ -147,11 +154,11 @@ button:hover {
   height: 300px;
   object-fit: cover;
   cursor: pointer;
-  transition: transform 1s;
+  transition: transform 0.2s;
 }
 
 .img:hover {
-  width: 100%;
+  transform: scale(1.05);
 }
 
 /* Media Section */
@@ -338,6 +345,108 @@ input {
   font-family: "roboto";
   text-decoration: none;
 }
+ /* Responsive */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-grid, .media-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+  }
+
+  .events-grid {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .life-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+/* Responsive pour Mobiles */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .header-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .news-grid, .media-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .event-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .life-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .img, .img-media, .event-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .links, .privacy {
+    text-align: center;
+  }
+}
+
+
 
 
 
